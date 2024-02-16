@@ -52,7 +52,7 @@ body{
 }
 /* END HEADER */
 .row {
-  height: 1000px;
+  /*height: 1000px;*/
   background-color: peru;
   margin: 10px;
 }
