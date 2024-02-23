@@ -1,10 +1,15 @@
+* {
+  box-sizing: border-box;
+}
 body{
  font-size: 16px;
  color:#fff;
  background-color: #61122f; /*maroon*/
- box-sizing: border-box;
 }
-
+#main-content {
+  padding: 0px;
+  margin: 0px; 
+}
 /** HEADER **/
 #header-nav{
   background-color: #f6b319; /*yellow*/
@@ -60,29 +65,40 @@ line-height: .75;
 /* margin-top: 0px; */
 }
 .row {
-  margin: 10px;
-/*  width: 100%;*/
 /*width: 100%;*/
-/*     padding: 10px;*/
-/*     background-color: darkred;*/
+margin: 0px 15px 0px 15px;
 }
-.row div {
-  border-color: darkgray;
-  border-width: 2px;
-  border-style: solid;
+.row>div {
+/*  border: 2px solid blue;*/
+/*  background-color: peru;*/
+margin-bottom: 15px;
+padding: 0px;
+/*  width: 90%;
+  margin-right: auto;
+  margin-left: auto;*/  
+}
+#chicken-content, #beef-content, #sushi-content{
+  border: 2px solid darkgray;
   background-color: peru;
-  margin-bottom: 5px;
-/*margin-left: 5px;*/
-/*width: auto;
-height: auto;
-position: relative;*/
-/*clear: both;*/
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px 15px 0px 15px;
+/*  margin-bottom: 5px;*/
+}
+.row div h3 {
+  float: right;
+}
+.row div p {
+  clear: both;
 }
 .row div span{
-/*  color: black;*/
-font-size: 1.2em;
-text-align: right;
-float: right;
+  font-size: 1.2em;
+  text-align: right;
+  float: right;
+}
+#empty-div {
+  clear: both;
 }
 
 /********** Large devices only **********/
@@ -92,7 +108,7 @@ float: right;
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
-.row div {
+  .row div {
 /*  clear: both;*/
 }
 
